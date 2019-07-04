@@ -1,54 +1,60 @@
 {
-    "name": "node-open-mining-portal",
-    "version": "0.0.4",
-    "description": "An extremely efficient, highly scalable, all-in-one, easy to setup cryptocurrency mining pool",
-    "keywords": [
-        "stratum",
-        "mining",
-        "pool",
-        "server",
-        "poolserver",
-        "bitcoin",
-        "litecoin",
-        "scrypt"
-    ],
-    "homepage": "https://github.com/globaltoken/node-open-mining-portal",
-    "bugs": {
-        "url": "https://github.com/globaltoken/node-open-mining-portal/issues"
-    },
-    "license": "GPL-2.0",
-    "author": "Matthew Little",
-    "contributors": [
-        "vekexasia",
-        "TheSeven"
-    ],
-    "main": "init.js",
-    "bin": {
-        "block-notify": "./scripts/blockNotify.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/globaltoken/node-open-mining-portal.git"
-    },
-    "dependencies": {
-        "stratum-pool": "git://github.com/globaltoken/node-stratum-pool.git",
-        "dateformat": "1.0.12",
-        "node-json-minify": "*",
-        "redis": "0.12.1",
-        "mysql": "*",
-        "async": "1.5.2",
-        "express": "*",
-        "body-parser": "*",
-        "compression": "*",
-        "dot": "*",
-        "colors": "*",
-        "node-watch": "*",
-        "request": "2.82.0",
-        "nonce": "*",
-        "bignum": "0.13.0",
-        "extend": "*"
-    },
-    "engines": {
-        "node": ">=0.10"
-    }
+  "name": "node-open-mining-portal",
+  "version": "0.0.4",
+  "description": "An extremely efficient, highly scalable, all-in-one, easy to setup cryptocurrency mining pool",
+  "keywords": [
+    "stratum",
+    "mining",
+    "pool",
+    "server",
+    "poolserver",
+    "bitcoin",
+    "litecoin",
+    "scrypt"
+  ],
+  "homepage": "https://github.com/globaltoken/node-open-mining-portal",
+  "bugs": {
+    "url": "https://github.com/globaltoken/node-open-mining-portal/issues"
+  },
+  "license": "GPL-2.0",
+  "author": "Matthew Little",
+  "contributors": [
+    "vekexasia",
+    "TheSeven"
+  ],
+  "main": "init.js",
+  "bin": {
+    "block-notify": "./scripts/blockNotify.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/globaltoken/node-open-mining-portal.git"
+  },
+  "dependencies": {
+    "stratum-pool": "git://github.com/globaltoken/node-stratum-pool.git",
+    "dateformat": "1.0.12",
+    "node-json-minify": "*",
+    "redis": "0.12.1",
+    "mysql": "*",
+    "async": "1.5.2",
+    "express": "*",
+    "body-parser": "*",
+    "compression": "*",
+    "dot": "*",
+    "colors": "*",
+    "node-watch": "*",
+    "request": "2.82.0",
+    "nonce": "*",
+    "bignum": "0.13.0",
+    "extend": "*",
+    "snyk": "^1.189.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
