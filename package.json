@@ -43,7 +43,7 @@
         "dot": "*",
         "colors": "*",
         "node-watch": "*",
-        "request": "2.82.0",
+        "request": "2.88.0",
         "nonce": "*",
         "bignum": "0.13.0",
         "extend": "*"
