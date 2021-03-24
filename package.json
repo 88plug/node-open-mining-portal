@@ -32,7 +32,7 @@
     },
     "dependencies": {
         "stratum-pool": "git://github.com/globaltoken/node-stratum-pool.git",
-        "dateformat": "1.0.12",
+        "dateformat": "2.0.0",
         "node-json-minify": "*",
         "redis": "0.12.1",
         "mysql": "*",
